@@ -473,9 +473,9 @@ endif
     " pip install yapf
     " python code format
     " format all file
-    autocmd FileType python nnoremap <leader>y :0,$!yapf<Cr>
+    autocmd FileType python nnoremap <leader>y :0,$!yapf<Space>--style='{COLUMN_LIMIT: 120}'<Cr>
     " format select block
-    autocmd FileType python vnoremap <leader>y :!yapf<Cr>
+    autocmd FileType python vnoremap <leader>y :!yapf<Space>--style='{COLUMN_LIMIT: 120}'<Cr>
 " }}}
 
 "------------------------------------------- end of configs --------------------------------------------
