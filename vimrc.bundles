@@ -525,12 +525,12 @@ endif
 " }}}
 
 " beta {{{
-    " pip install yapf
+    " pip install autopep8
     " python code format
     " format all file
-    autocmd FileType python nnoremap <leader>y :0,$!yapf<Space>--style='{COLUMN_LIMIT: 120}'<Cr>
+    autocmd FileType python nnoremap <leader>y :0,$!autopep8<Space>--max-line-length=120<Space>--ignore=""<Cr>
     " format select block
-    autocmd FileType python vnoremap <leader>y :!yapf<Space>--style='{COLUMN_LIMIT: 120}'<Cr>
+    autocmd FileType python vnoremap <leader>y :!autopep8<Space>--max-line-length=120<Space>--ignore=""<Cr>
 " }}}
 
 "------------------------------------------- end of configs --------------------------------------------
