@@ -71,7 +71,7 @@ brew install the_silver_searcher
 ##### 2.2 使用Python
 
 ```
-sudo pip install flake8 yapf
+pip install flake8 autopep8
 ```
 
 ##### 2.3 如果使用Javascript(不需要的跳过)
